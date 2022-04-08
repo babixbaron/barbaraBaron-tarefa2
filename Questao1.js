@@ -2,9 +2,10 @@
 // Exiba no console o valor do desconto e o preço a pagar.
 
 let preçoMercadoria = 50
+let porcentagemDeDesconto = 0.2
 
-let desconto = 0.2
+let preçoComDesconto = preçoMercadoria * porcentagemDeDesconto
 
-let preçoFinal = preçoMercadoria - (preçoMercadoria * desconto)
+let preçoFinal = preçoMercadoria - preçoComDesconto
 
-console.log('O preço a ser pago com 20% de desconto é de R$' + preçoFinal + '.')
+console.log('O desconto foi de R$ ' + preçoComDesconto + ' e o valor final a ser pago é de R$ ' + preçoFinal + '.')
